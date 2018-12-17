@@ -222,6 +222,8 @@ def evaluate(data_src, data_ref, data_sys,
             print '%s: %.4f' % (metric, scores[metric])
         print
 
+    return scores
+
 
 def run_mteval(data_ref, data_sys, data_src):
     """Run document-level BLEU and NIST via mt-eval13b (Perl)."""
